@@ -88,13 +88,12 @@ section{
   background-color: var(--body-color);
   width: 100%;
 }
-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: var(--header-height);
-  width: 100%;
+
+
+main{
+  height: cal(var(--header-height));
 }
+/*---------------------------Logo---------------------------*/
 .logo{
   font:700 1.31rem "Poppins", sans-serif;
   color: var(--title-color);
@@ -103,10 +102,16 @@ nav{
 .logo span{
   color: var(--base-color)
 }
+/*--------------------Navigation-----------------------------*/
 
-main{
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: var(--header-height);
+  width: 100%;
 }
+
 
 /*-------------- Home --------------------------------------*/
 #home{
