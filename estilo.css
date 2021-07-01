@@ -1,4 +1,5 @@
-/*--------------Reset--------------------------------------*/
+/*º--------------Reset--------------------------------------*/
+
 *{
   margin: 0;
   padding: 0;
@@ -14,7 +15,7 @@ img{
   width:100%;
   height:auto;
 }
-/*-------------- Variables --------------------------------------*/
+/*º-------------- Variables --------------------------------------*/
 
 :root{
   --header-height:4.5rem;
@@ -29,8 +30,10 @@ img{
    --text-color-light: hsl(0 0% 98%);
    --body-color: hsl(0 0% 98%);
 }
-/*-------------- Base --------------------------------------*/
-
+/*º-------------- Base --------------------------------------*/
+html{
+  scroll-behavior: smooth;
+}
 body{
   font: 400 1rem "DM Sans", sans-serif;
   color: var(--text-color);
@@ -88,22 +91,39 @@ body{
   padding:5rem 0;
 }
 .section .title{
-margin-bottom: 1rem;}
+  margin-bottom: 1rem;
+}
+.section header{
+  margin-bottom: 4rem;
+}
+.section header strong{
+  color: var(--base-color)
+}
 #header{
-  border-bottom: 1px #e4e4e4e4 solid;
+  border-bottom: 1px solid #e4e4e4e4;
   margin-bottom: 2rem;
   display: flex;
 
-  width: 100%;
   position:fixed;
+  width: 100%;
   top: 0;
   left:0;
   z-index: 100;
   background-color: var(--body-color);
   width: 100%;
 }
-
-
+#header.scroll{
+  background-color:var(--base-color);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+#header.scroll .logo span{
+  color: white;
+  transition:1.5s;
+}
+#header.scroll .icon-menu{
+  color: white;
+  transition:1.5s;
+}
 main{
   height: cal(var(--header-height));
 }
@@ -152,10 +172,16 @@ nav ul li a::after{
 nav ul li a:hover::after{
   width:100%;
 }
+
 nav .menu{
   opacity: 0;
   visibility: hidden;
+  top: -20rem;
+  transition:0.2s;
 }
+  nav .menu ul{
+    display:none;
+  }
 /*Mostrar MENU==========*/
 nav.show .menu{
   opacity: 1;
@@ -167,10 +193,13 @@ nav.show .menu{
   position:fixed;
   left:0;
   top:0;
-}
-nav.show .menu{
+  
   display: grid;
   place-content: center;
+}
+
+nav.show .menu ul{
+  display: grid;
 }
 nav.grid ul.grid{
   gap: 4rem;
@@ -184,16 +213,21 @@ nav.grid ul.grid{
 nav .icon-close{
   visibility:hidden;
   opacity:0;
-
+  top: -1.5rem;
   position:absolute;
   right: 1.5rem;
-  /*transition*/
+
+  transition:1.2s;
 }
 nav.show div.icon-close{
   visibility: visible;
   opacity: 1;
+  top: 1.5rem;
 }
-/*-------------- Home --------------------------------------*/
+/*
+ºSection
+º<-------------- Home ------------------------------------>
+*/
 #home{
   overflow: hidden;
 }
@@ -236,7 +270,8 @@ nav.show div.icon-close{
 }
 
 /*
-ºSection "Sobre nós"=====================
+ºSection 
+º<----------------Sobre nós"-------------------->
 */
 #about{
   background-color: white;
@@ -268,4 +303,31 @@ nav.show div.icon-close{
 #about .text{
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+/*
+ºSection 
+º<----------------Services"-------------------->
+*/
+
+.cards.grid{
+  gap: 1.5rem;
+}
+.card{
+  padding: 3.6rem 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: 0.25rem solid var(--base-color);
+  border-radius: .25rem .25rem 0 0;
+  text-align: center;
+}
+.card i{
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: var(--base-color)
+}
+
+.card .title{
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
 }
