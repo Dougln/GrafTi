@@ -33,3 +33,36 @@ window.addEventListener("scroll", function(){
     header.classList.remove("scroll")
   }
 })
+
+/*
+ºTestimonials slider carousel
+*/ 
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  pagination:{
+    el:'.swiper-pagination'
+  },
+  mousewheel:true,
+  keyboard:true,
+
+});
+
+/*
+ºScroll Reveal: Mostrar elementos quando der scroll na página
+*/
+
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance:'30px',
+  duration:600,
+  reset:true
+})
+scrollReveal.reveal(
+  `#home .text,#home .image,
+   #about .text,#about.image,
+   #services header, #services .card,
+   #testmonials header, #testmonials .testimonials,
+   #contact .text, #contact .links
+  `,
+  {interval:100}
+  )

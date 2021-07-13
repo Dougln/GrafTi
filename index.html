@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!--Page INFO-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <title>Graf-Ti</title>
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!--Icones-->
-  <link rel="stylesheet" href="assets/fonts/style.css">
+    <link rel="stylesheet" href="assets/fonts/style.css">
     <!--Style-->
     <link rel="stylesheet" href="estilo.css" />
 
@@ -16,8 +19,9 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    
 
-    <title>Document</title>
+    
   </head>
   <body>
     <header id="header">
@@ -33,13 +37,16 @@
             <li><a class="title" href="#testimomials">Depoimentos</a></li>
             <li><a class="title" href="#contact">Contato</a></li>
           </ul>
-        </div><!--/menu-->
+        </div>
+        <!--/menu-->
         
         <div class="toggle icon-menu"></div>
         <div class="toggle icon-close"></div>
       </nav>
     </header>
     <main>
+              <!--/home-->
+
       <section class="section" id="home">
         <div class="container grid">
           <div class="image">
@@ -58,6 +65,8 @@
           </div>
         </div>
       </section>
+              <!--/about-->
+
       <div class="divider-1"></div>
       <section class="section" id="about">
         <div class="container grid">
@@ -74,10 +83,13 @@
           </div>
         </div>
       </section>
-      <div class="divider-2"></div>
+      <div class="divider-2"></div> 
+         <!--/services-->
       <section class="section" id="services">
         <div class="container grid">
           
+              
+
           <header>
             <h2 class="title">Serviços</h2>
               <p>Com mais de 10 anos no mercado, o <STRONG>Beautysalon</STRONG> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais</p>
@@ -100,10 +112,98 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> 
+      
+      <div class="divider-1"></div>
+        <!--/testmonials-->
+       <section class="section" id="testmonials">
+         <div class="container">
+           <header>
+             <h2 class="title">Depoimentos</h2>
+           </header>
+           <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonials swiper-slide">
+                <blockquote>
+                 <p>
+                   <span>&ldquo;</span>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ipsum nesciunt quasi magnam corrupti qui sit ad perspiciatis nihil minima aperiam enim illum ratione in, nisi eaque sed, porro iusto?
+                </p>
+                <cite>
+                  <img src="assets/fotos/10.jpg" alt="foto da doutora wanessa souza">
+                  Wanessa Souza
+                </cite><!--tag usada para fazer citações-->
+                </blockquote>
+                
+              </div>
+              <div class="testimonials swiper-slide">
+               <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ipsum nesciunt quasi magnam corrupti qui sit ad perspiciatis nihil minima aperiam enim illum ratione in, nisi eaque sed, porro iusto?
+               </p>
+               <cite>
+                 <img src="assets/fotos/8.jpg" alt="Foto de pisit">
+                 Pisit
+               </cite><!--tag usada para fazer citações-->
+               </blockquote>
+               
+             </div>
+ 
+             <div class="testimonials swiper-slide">
+               <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ipsum nesciunt quasi magnam corrupti qui sit ad perspiciatis nihil minima aperiam enim illum ratione in, nisi eaque sed, porro iusto?
+               </p>
+               <cite>
+                 <img src="assets/fotos/9.jpg" alt="Foto de Nínive Elen">
+                 Nínive Elen
+               </cite><!--tag usada para fazer citações-->
+               </blockquote>
+               
+             </div>
+            </div>
+            <div class="swiper-pagination"></div>
+           </div>
+         </div>
+       </section>
 
-    </main>
+       <div class="divider-2"></div>
+
+        <!--/Contact-->
+       <section class="section" id="contact">
+         <div class="container grid">
+           <div class="text">
+            <h2 class="title">Entre em contato com a gente</h2>
+            <p>Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
+            <a href="https://api.whatsapp.com/send?phone=+557196040527&text=Oi! Quero realizar o orçamento" 
+            class="button" 
+            target="_blank"> 
+            <i class="icon-whatsapp"></i>Entrar em Contato</a>
+           </div>
+
+
+           <div class="links">
+             <ul>
+               <li><i class="icon-phone"></i>71 3345-4859</li>
+               <li><i class="icon-map-pin"></i>Imbuí-Rua Maracujá</li>
+               <li> <i class="icon-mail"></i>contato@grafti.com</li>
+             </ul>
+           </div>
+         </div>
+       </section>
+
+      </main>
     <footer></footer>
+    <!--Swiper-->
+    <!--Tem que ser adicionado antes do arquivo que o fará uso-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!--main.js-->
     <script src="main.js"></script>
   </body>
 </html>

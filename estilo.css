@@ -111,14 +111,15 @@ body{
   z-index: 100;
   background-color: var(--body-color);
   width: 100%;
+  transition: 1.5s;
 }
 #header.scroll{
   background-color:var(--base-color);
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+  transition: 1.5s;
 }
 #header.scroll .logo span{
-  color: white;
-  transition:1.5s;
+  color: white; 
 }
 #header.scroll .icon-menu{
   color: white;
@@ -330,4 +331,95 @@ nav.show div.icon-close{
 .card .title{
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+}
+
+/*
+º-----------------Section 
+º<----------------Testimonials"-------------------->
+*/
+#testimonials header{
+  margin-left:  1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+}
+#testimonials .container{
+  margin-left: 0;
+  margin-right: 0;
+}
+#testimonials{
+  background:white;
+
+}
+#testmonials blockquote{
+  padding:2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+#testmonials blockquote p{
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--title-color);
+}
+#testmonials blockquote p span{
+  font: 700 2.5rem serif;
+  
+  position:absolute;
+  top:-0.375rem ;
+  left: -1.875rem;
+  color: var(--base-color)
+}
+#testmonials cite{
+  display: flex;
+  align-items: center;
+  font-style: italic;
+}
+#testmonials cite img{
+  width:2rem;
+  height:2rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.5rem;
+}
+
+/*Swiper*/
+.swiper-slide{
+  height:auto;
+  padding:4rem 1rem;
+}
+
+.swiper-pagination-bullet{
+  width:0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active{
+  background:var(--base-color);
+}
+/*
+ºSection 
+º<----------------Contact"-------------------->
+*/
+
+#contact .grid{
+  gap: 4rem;
+}
+#contact .text p{
+  margin-bottom: 2rem;
+}
+#contact .button i,
+#contact ul li i
+{
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+#contact ul.grid{
+  gap: 2rem;
+}
+#contact ul li {
+  display:flex;
+  align-items: center;
+}
+#contact ul li i{
+  color: var(--base-color);
 }
