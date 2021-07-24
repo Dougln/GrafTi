@@ -22,10 +22,10 @@ for (const element of begin) {
 * Objetivo: Mudar o header da página quando der ''scroll''
 */ 
 
-function changeHeaderWhenScroll(){
-  
-  const header = document.querySelector('header')
-  const navHeight = header.offsetHeight
+const header = document.querySelector('header')
+const navHeight = header.offsetHeight
+  function changeHeaderWhenScroll(){
+   
   if(window.scrollY >= navHeight){
     //scroll é maior que a altura do header
     header.classList.add("scroll")
@@ -49,7 +49,12 @@ const swiper = new Swiper('.swiper-container', {
   },
   mousewheel:true,
   keyboard:true,
-
+  breakpoints:{
+    767:{
+      slidesPerView:2,
+      setWrapperSide:true
+    }
+  }
 });
 
 /*
@@ -76,9 +81,9 @@ scrollReveal.reveal(
   /*
     * Objetivo: Botão voltar para o topo da página
   */ 
-  
+  const backToTopButton = document.querySelector('.back-to-top')
   function backToTop(){
-    const backToTopButton = document.querySelector('.back-to-top')
+    
     if(window.scrollY >= 560){
       backToTopButton.classList.add('show')
     }else{
@@ -89,7 +94,36 @@ scrollReveal.reveal(
 /*
 ºWhen Scroll
 */
+
+/*
+    ºMenu ativo conforme a seção visível na página
+  */
+ const sections = document.querySelectorAll('main section[id]')
+ function activeMenuAtCurrentSection(){
+   const checkpoint = window.pageYOffset + (window.innerHeight/8) * 4//innerHeight pega todo o tamanho da window   
+   for (const section of sections) {
+     const sectionTop = section.offsettop
+     const sectionHeight = section.offsetHeight
+     const sectionId = section.getAttribute('id')
+     
+     const checkpointStart = checkpoint >=sectionTop
+     const checkpointEnd = checkpoint <= sectionTop + sectionHeight
+
+     if(checkpointStart && checkpointEnd){
+       document.
+       querySelector('nav ul li a[href*='+ sectionId +']')
+       .classList.add('active')
+     }else{
+      document.
+      querySelector('nav ul li a[href*='+ sectionId +']')
+      .classList.remove('active')
+     }
+   }
+ }
   window.addEventListener('scroll', function (){
     changeHeaderWhenScroll()
     backToTop()
+    activeMenuAtCurrentSection()
   })
+
+  
