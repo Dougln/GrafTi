@@ -50,13 +50,12 @@ const swiper = new Swiper('.swiper-container', {
   },
   mousewheel:true,
   keyboard:true,
-  breakpoints:{
-    767:{
-      slidesPerView:2,
-      setWrapperSide:true
-    }
-  }
+  navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
 });
+
 
 /*
   * Objetivo: Mostrar suavemente à aparição dos elementos quando der 'scrol' na página

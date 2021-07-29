@@ -341,7 +341,54 @@ h4{
 ºSection 
 º<----------------Services"-------------------->
 */
+.image-services{
+  width:31.25rem;
+  height: 31.25rem;
+  display: block;
+  margin: 0 auto;
 
+  
+}
+.image-services1{
+  height: 31.25rem;
+  display: block;
+  margin: 0 auto;
+  width:31.25rem;
+  
+  background-color: black;
+}
+.border-services{
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
+    text-align: center;
+    
+    border: 0.4rem solid var(--base-color);
+    
+}
+.border-services1{
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;
+  text-align: center;
+  
+  border: 0.125rem solid var(--base-color);
+  
+}
+.icon-services {
+  text-align: center;
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: var(--base-color)
+}
+.h-services{
+  text-align: center;
+}
 .cards.grid{
   gap: 1.5rem;
 }
@@ -617,9 +664,7 @@ footer .social a:hover{
     /*
       *Services
     */
-    .cards.grid{
-      grid-template-columns: 1fr 1fr 1fr;
-    }
+  
     .card{
       padding-left: 3rem;
       padding-right: 3rem;
