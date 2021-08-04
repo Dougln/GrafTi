@@ -49,11 +49,12 @@ const swiper = new Swiper('.swiper-container', {
     el:'.swiper-pagination'
   },
   mousewheel:true,
+  preloadImages:true,
   keyboard:true,
   navigation: {
   nextEl: '.swiper-button-next',
-  prevEl: '.swiper-button-prev',
-},
+  prevEl: '.swiper-button-prev'
+}
 });
 
 

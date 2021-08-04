@@ -15,6 +15,9 @@ img{
   width:100%;
   height:auto;
 }
+video{
+  width:100%;
+}
 /*º-------------- Variables --------------------------------------*/
 
 :root{
@@ -45,17 +48,25 @@ body{
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
 }
+
 #logo-graf{
   width: 1.5rem;
   height: 1.35rem;
-  margin-right: -0.438rem;
+  margin-right: -0.4rem;
 }
 .title{
   font:700 1.875rem var(--title-font);
   color: var(--title-color);
   -webkit-font-smoothing: auto;
-}
 
+}
+.title-services{
+  font:700 1.65rem var(--title-font);
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+  text-align: center;
+  margin-bottom: 0.82rem;
+}
 .button{
   background-color: var(--base-color);
   color: var(--text-color-light);
@@ -138,6 +149,7 @@ body{
 }
 
 #header.scroll .logo span{
+  
   color: white; 
 }
 #header.scroll nav ul li a:hover::after{
@@ -156,7 +168,7 @@ main{
 }
 /*---------------------------Logo---------------------------*/
 .logo{
-  font:700 1.31rem var(--title-font);
+  font:700 2rem var(--title-font);
   color: var(--title-color);
 
 }
@@ -307,7 +319,7 @@ h4{
   visibility: hidden;
 }
 .justi{
-  
+  text-indent: 1rem;
   text-align: justify;
 }
 
@@ -346,6 +358,12 @@ h4{
 .services-text{
   font-size:var(--subtitle-font-size);
   text-align: justify;
+  text-indent: 1rem;
+}
+.services-text1{
+  font-size:var(--subtitle-font-size);
+  text-align: center;
+  
   
 }
 .image-services{
@@ -604,10 +622,11 @@ footer .social a:hover{
     /*
       ºResponsive
     */
+    
   /*
-    extra large devices:1200>
+    extra large devices:1200>=
   */
-  @media (min-width:1200px) {
+  @media (min-width:967px) {
     .logo{
       font-size: 2.25rem;
     }
@@ -740,23 +759,7 @@ footer .social a:hover{
       font-size: 2.25rem;
     }
   }
-@media (min-width:1170px){
-  /*
-    *Reusable Class
-  */
-  /*
-    ºAbout
-  */
-  #about .image-video{
-    
-    margin: 0 auto;
-  }
-  #about p,
-  #about .text{
-    text-align: center;
-  }
-  
-}
+
   /*
     large devices:1023 >
   */
@@ -802,19 +805,85 @@ footer .social a:hover{
       font: 500 1rem var(--body-font);
     }
   }
-  @media (min-width:767px) {
-    :root{
-      --title-font-size:2.2rem;
+  
+  
+  
+
+  @media (max-width:425){
+    /*
+      *home
+    */
+    .section {
+      padding: calc(1rem + var(--header-height))0;
+    }
+    /*.container{
+      max-width:400px;
       
+    }*/
+    .subtitle-servcices{
+      text-align: justify;
     }
+    .title{
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+    .logo-class-graf{
+      width: 1.2rem;
+      height: 1.0rem;
+      margin-right: -0.325rem;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: var(--header-height);
+      width: 100%;
+    }
+    img {
+      left: -.0rem;
+      width: 100%;
+      height: auto;
+    }
+  /*
+    *Sobre
+  */
+  
+  video{
+    width:100%;
+  }
+  
+  /*
+  *Services
+  */
+  :root{
+    --title-font-size: var(1rem)
+  }
+   .title{
+    font: 700 1.2rem var(--title-font);
+    font-size: var(--subtitle-font-size);
+  }
+  
+  .image-services {
+    width: 100%;
+    height: 69%;
     
+    margin: 0 auto;
   }
-  @media (min-width:767px) {
-      :root{
-        --title-font-size:2.2rem; 
-    }
+
+  .image-services1 {
+    width: 100%;
+    height: 69%;
+    display: block;
+    margin: 0 auto;
   }
-  @media (min-width:500px){
+  .image-car-services {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+  /*
+   *footer
+  */
   a.button-whatsapp{
     background-color: #25D366;
     color: var(--text-color-light);
@@ -825,4 +894,4 @@ footer .social a:hover{
     border-radius: 0.25rem;
     font: 500 1rem var(--body-font);
   }
-}
+  }
