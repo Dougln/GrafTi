@@ -809,10 +809,27 @@ footer .social a:hover{
   
   
 
-  @media (max-width:425){
+  @media (max-width:425px){
     /*
       *home
     */
+    #home img{
+     
+        position: relative;
+       right: 0;
+
+    }
+    .services-text{
+      font-size:var(--subtitle-font-size);
+      text-align: center;
+      text-indent: 1rem;
+    }
+    .services-text1{
+      font-size:var(--subtitle-font-size);
+      text-align: center;
+      text-indent: 1rem;
+      
+    }
     .section {
       padding: calc(1rem + var(--header-height))0;
     }
@@ -865,7 +882,7 @@ footer .social a:hover{
   
   .image-services {
     width: 100%;
-    height: 69%;
+    height: 55%;
     
     margin: 0 auto;
   }
