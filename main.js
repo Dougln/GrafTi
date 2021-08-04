@@ -74,7 +74,7 @@ scrollReveal.reveal(
    #testmonials header, #testmonials .testimonials,
    .text #contact, .links #contact,
    footer .brand, footer .social,
-   .icon-show
+   
   `,
   {interval:100}
   )

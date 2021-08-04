@@ -48,7 +48,7 @@ body{
 #logo-graf{
   width: 1.5rem;
   height: 1.35rem;
-  margin-right: -7px;
+  margin-right: -0.438rem;
 }
 .title{
   font:700 1.875rem var(--title-font);
@@ -74,7 +74,7 @@ body{
   transition:0.3s;
 }
 .divider-1{
-  height:1px;
+  height:0.063rem;
   background: linear-gradient(
     270deg, 
     hsla(var(--hue), 36%, 57%, 13),
@@ -289,6 +289,7 @@ nav.show div.icon-close{
 #home .image::before{
   border-radius: 0.25rem;
 }
+
 #home .text{
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -325,6 +326,7 @@ h4{
   
 }
 
+
 #about .image img{
   position:relative;
 }
@@ -343,6 +345,8 @@ h4{
 */
 .services-text{
   font-size:var(--subtitle-font-size);
+  text-align: justify;
+  
 }
 .image-services{
   width:31.25rem;
@@ -736,12 +740,37 @@ footer .social a:hover{
       font-size: 2.25rem;
     }
   }
-
+@media (min-width:1170px){
+  /*
+    *Reusable Class
+  */
+  /*
+    ºAbout
+  */
+  #about .image-video{
+    
+    margin: 0 auto;
+  }
+  #about p,
+  #about .text{
+    text-align: center;
+  }
+  
+}
   /*
     large devices:1023 >
   */
   @media (min-width:1023px) {
-
+    a.button-whatsapp{
+      background-color: #25D366;
+      color: var(--text-color-light);
+      height: 3.5rem;
+      display: inline-flex;
+      align-items: center;
+      padding:0 2rem;
+      border-radius: 0.25rem;
+      font: 500 1rem var(--body-font);
+    }
   }
   /*
     large devices:992 >
@@ -751,6 +780,7 @@ footer .social a:hover{
     --title-font-size:2.25rem;
     --subtitle-font-size:1.125rem;
   }
+  
 }
 /*
     medium devices:767 >
@@ -758,6 +788,41 @@ footer .social a:hover{
   @media (min-width:767px) {
     :root{
       --title-font-size:2.2rem;
+
+      
+    }
+    a.button-whatsapp{
+      background-color: #25D366;
+      color: var(--text-color-light);
+      height: 3.5rem;
+      display: inline-flex;
+      align-items: center;
+      padding:0 2rem;
+      border-radius: 0.25rem;
+      font: 500 1rem var(--body-font);
     }
   }
-  
+  @media (min-width:767px) {
+    :root{
+      --title-font-size:2.2rem;
+      
+    }
+    
+  }
+  @media (min-width:767px) {
+      :root{
+        --title-font-size:2.2rem; 
+    }
+  }
+  @media (min-width:500px){
+  a.button-whatsapp{
+    background-color: #25D366;
+    color: var(--text-color-light);
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding:0 2rem;
+    border-radius: 0.25rem;
+    font: 500 1rem var(--body-font);
+  }
+}
