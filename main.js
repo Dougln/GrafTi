@@ -53,13 +53,8 @@ const swiper = new Swiper('.swiper-container', {
   keyboard:true,
   navigation: {
   nextEl: '.swiper-button-next',
-  prevEl: '.swiper-button-prev',
-},
-  breakpoints:{
-    425:{
-      
-    }
-  }
+  prevEl: '.swiper-button-prev'
+}
 });
 
 
