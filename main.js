@@ -18,35 +18,8 @@ const begin = document.querySelectorAll("nav ul li a")
 for (const element of begin) {
   element.addEventListener("click", function(){
     nav.classList.remove("show")
-    
-
   })
 }
-/*
-* Objetivo: Mudar o header da página quando der ''scroll''
-*/ 
-
-
-const header = document.querySelector('header')
-const navHeight = header.offsetHeight
-
-console.log(header.classList);
-      
-  
-  
-  
-  /*("click", function(){
-  
-  
-})
-  */
-  
-
-  
-
-
-
-
 /*
   * Objetivo: Adicionar o 'carrosel' das imagens da section 'Testimonials slider carousel'
 */ 
