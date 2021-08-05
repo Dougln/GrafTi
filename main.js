@@ -42,48 +42,7 @@ console.log(header.classList);
   */
   
 
-  function changeHeaderWhenScroll(){
-   
-  if(window.scrollY >= navHeight){
-    //scroll é maior que a altura do header
-    header.classList.add('menu-header-background')
-    header.classList.add('menu-header-span')
-    header.classList.add('menu-header-icon-menu')
-    header.classList.add('menu-header-menu-background')
-    
-    if (header.classList.contains('menu-header-letter-large') == true) {
-      header.classList.remove('menu-header-menu-letter')
-   
-      
-    }else{
-      header.classList.add('menu-header-letter-large')
-      header.classList.remove('menu-header-menu-letter')
-
-    }
-      header.classList.add('menu-header-letter')
-    
-
-
-    
-    
-    
-
-    
-  }else{
-    //menor que a altura do header
-      header.classList.remove("scroll")
-    
-      header.classList.remove('menu-header-background')
-      header.classList.remove('menu-header-span')
-      header.classList.remove('menu-header-menu-background')
-
-
-      
-      menuColors.classList.remove('menu-hidden')
-      
-    
-  }
-}
+  
 console.log(header.classList);
 toggleMenu.addEventListener('click',menuEvent)
     function menuEvent(){
@@ -195,7 +154,7 @@ scrollReveal.reveal(
       }
     }
   window.addEventListener('scroll', function (){
-    changeHeaderWhenScroll()
+    
     backToTop()
     activateMenuAtCurrentSection()
     
