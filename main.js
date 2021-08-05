@@ -25,11 +25,11 @@ for (const element of begin) {
 /*
 * Objetivo: Mudar o header da página quando der ''scroll''
 */ 
-const toggleMenu = document.querySelector('.toggle')
-const menuColor = document.querySelectorAll('.js-menu-color')
+
+
 const header = document.querySelector('header')
 const navHeight = header.offsetHeight
-console.log(toggleMenu);
+
 console.log(header.classList);
       
   
@@ -43,14 +43,7 @@ console.log(header.classList);
   
 
   
-console.log(header.classList);
-toggleMenu.addEventListener('click',menuEvent)
-    function menuEvent(){
-    console.log("entrei");
-    
-    
-    
-  }
+
 
 
 
