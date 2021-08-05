@@ -11,6 +11,16 @@ ul{
 a{
   text-decoration: none;
 }
+a.button-whatsapp{
+  background-color: #25D366;
+  color: var(--text-color-light);
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding:0 2rem;
+  border-radius: 0.25rem;
+  font: 500 1rem var(--body-font);
+}
 img{
   width:100%;
   height:auto;
@@ -181,7 +191,7 @@ body{
   color: white;
 
 }
-#header.menu-header-menu-background .icon-menu{
+#header.menu-header-menu-background .icon-men{
   color: white;
   transition:0.5s;
 }
