@@ -8,6 +8,7 @@ const toggle = document.querySelectorAll("nav .toggle")
 for (const element of toggle) {
   element.addEventListener("click",function(){
     nav.classList.toggle('show')
+   
   })
 }
 /*
@@ -17,26 +18,80 @@ const begin = document.querySelectorAll("nav ul li a")
 for (const element of begin) {
   element.addEventListener("click", function(){
     nav.classList.remove("show")
+    
+
   })
 }
 /*
 * Objetivo: Mudar o header da página quando der ''scroll''
 */ 
-
+const toggleMenu = document.querySelector('.toggle')
+const menuColor = document.querySelectorAll('.js-menu-color')
 const header = document.querySelector('header')
 const navHeight = header.offsetHeight
+console.log(toggleMenu);
+console.log(header.classList);
+      
+  
+  
+  
+  /*("click", function(){
+  
+  
+})
+  */
+  
+
   function changeHeaderWhenScroll(){
    
   if(window.scrollY >= navHeight){
     //scroll é maior que a altura do header
-    header.classList.add("scroll")
+    header.classList.add('menu-header-background')
+    header.classList.add('menu-header-span')
+    header.classList.add('menu-header-icon-menu')
+    header.classList.add('menu-header-menu-background')
+    
+    if (header.classList.contains('menu-header-letter-large') == true) {
+      header.classList.remove('menu-header-menu-letter')
+   
+      
+    }else{
+      header.classList.add('menu-header-letter-large')
+      header.classList.remove('menu-header-menu-letter')
+
+    }
+      header.classList.add('menu-header-letter')
+    
+
+
+    
+    
+    
+
     
   }else{
     //menor que a altura do header
-    header.classList.remove("scroll")
+      header.classList.remove("scroll")
+    
+      header.classList.remove('menu-header-background')
+      header.classList.remove('menu-header-span')
+      header.classList.remove('menu-header-menu-background')
+
+
+      
+      menuColors.classList.remove('menu-hidden')
+      
     
   }
 }
+console.log(header.classList);
+toggleMenu.addEventListener('click',menuEvent)
+    function menuEvent(){
+    console.log("entrei");
+    
+    
+    
+  }
 
 
 
@@ -131,7 +186,7 @@ scrollReveal.reveal(
               contador = false
 
             }
-            console.log(section);
+            
         } else {
           document
             .querySelector('nav ul li a[href*=' + sectionId + ']')
@@ -145,5 +200,5 @@ scrollReveal.reveal(
     activateMenuAtCurrentSection()
     
   })
-
+menuEvent()
   
