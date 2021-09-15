@@ -23,7 +23,7 @@ for (const element of begin) {
 /*
   * Objetivo: Adicionar o 'carrosel' das imagens da section 'Testimonials slider carousel'
 */ 
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   pagination:{
     el:'.swiper-pagination'

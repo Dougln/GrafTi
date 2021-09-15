@@ -460,6 +460,17 @@ h4{
   border: 0.125rem solid var(--base-color);
   
 }
+.icon-zap {
+  
+  background-color: #25D366;
+  color: var(--text-color-light);
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding:0 2rem;
+  border-radius: 0.25rem;
+  font: 500 1rem var(--body-font);
+}
 .icon-services {
   text-align: center;
   display: block;
@@ -655,18 +666,12 @@ footer .social a:hover{
   font-size: 1.5rem;
   line-height: 0;
 
-  visibility: hidden;
-  opacity: 0;
-
-  transition:0.3s;
-  transform: translateY(100%);
-}
-.back-to-top.show{
-  visibility:visible;
+  visibility: visible;
   opacity: 1;
 
-  transform: translateY(0);
+  
 }
+
 
     /*
       ºResponsive
@@ -843,21 +848,51 @@ footer .social a:hover{
 
       
     }
-    a.button-whatsapp{
-      background-color: #25D366;
+    .button-whatsapp1{
+      
       color: var(--text-color-light);
-      height: 3.5rem;
+      height: 3rem;
       display: inline-flex;
       align-items: center;
       padding:0 2rem;
       border-radius: 0.25rem;
       font: 500 1rem var(--body-font);
     }
+    .icon-zap {
+  
+     
+      text-align: center;
+      display: block;
+      margin-bottom: 0.4rem;
+      font-size: 3.5rem;
+      color: white;
+      
+    }
   }
   
   
-  
+  @media (max-width:570px){
+  .button-whatsapp1{
+      
+    color: var(--text-color-light);
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    padding:0 2rem;
+    border-radius: 0.25rem;
+    font: 500 1rem var(--body-font);
+  }
+  .icon-zap {
 
+    
+    text-align: center;
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 3.5rem;
+    color: white;
+    
+  }
+}
   @media (max-width:425px){
     /*
       *home
