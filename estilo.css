@@ -342,6 +342,8 @@ nav.show div.icon-close{
 #home .image img{
   position:relative;
   right: 2.93rem;
+  left: 2.93rem;
+
 }
 #home .image img, 
 #home .image::before{
@@ -820,6 +822,24 @@ footer .social a:hover{
     large devices:1023 >
   */
   @media (min-width:1023px) {
+    /*
+    *home=========================
+    */
+    #home .image img{
+      top: -2rem;
+      left: 2rem;
+      height:90% ;
+    }
+    #home .image::before {
+      content: '';
+      height: 100%;
+      width: 100%;
+      background: var(--base-color-second);
+      position: absolute;
+      top: -16.8%;
+      left: 16.7%;
+      z-index: 0;
+  }
     a.button-whatsapp{
       background-color: #25D366;
       color: var(--text-color-light);
